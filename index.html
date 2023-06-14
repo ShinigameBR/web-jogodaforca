@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/words.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Jogo da Forca</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Dica: <span>Abreviado fica ex.</span></p>
+                <p class="attempts">Tentativas restantes: <span><b>6</b></span></p>
+            </div>
+            <input type="text" name="letter" id="letter" placeholder="Digite uma letra">
+            <div class="buttons">
+                <button class="refresh-word" onclick="refreshWord()">Trocar 🔄</button>
+                <button class="check-letter" onclick="checkLetter()">Chutar 🦶</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
